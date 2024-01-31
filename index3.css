@@ -1,0 +1,211 @@
+body{
+    background-image: url(og.jpg);
+    background-size:auto;
+
+
+}
+#h {
+    visibility: hidden;
+}
+
+#w {
+    visibility: hidden;
+}
+
+#t {
+    visibility: hidden;
+}
+
+.card-body {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.table-responsive {
+    border-radius: 10px;
+}
+
+.btn {
+    color: black !important;
+    border-width: 3px !important;
+    background-color: lightskyblue !important;
+}
+
+.btn:hover {
+    border-color: lightskyblue !important;
+    /*color: white !important;*/
+    background-color: rgba(135, 206, 250, 0.598) !important;
+}
+
+.my-0 {
+    color: azure !important;
+}
+
+.card-header {
+    background-color: skyblue !important;
+}
+.container
+{
+    margin-top: 130px  !important;
+}
+
+/*Card amazing animation for intractive design*/
+.card {
+    background-color: rgba(243, 239, 239, 0.269) !important;
+    border: 1px solid rgba(0, 0, 0, 0.125) !important;
+    color: #333 !important;
+    box-shadow: 0 4px 8px rgb(0, 0, 0) !important;
+    transition: transform 0.6s ease !important;
+    border-style: outset !important;
+}
+
+.card:hover {
+    transform: scale(1.07) !important;
+    border-style:outset  !important;
+    border-color: #232323d3  !important;
+}
+td{
+    background-color: rgba(243, 239, 239, 0.269) !important;
+    border: 1px solid rgba(0, 0, 0, 0.125) !important;
+    color:rgb(19, 19, 19) !important;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1) !important;   
+}
+th{
+    background-color: skyblue !important;
+    color:rgb(19, 19, 19) !important;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#download
+{
+    padding-top:50px !important;
+    margin-left: 10px !important;
+}
+#about
+{
+   font-size: large !important;
+}
+#bold
+{
+    font-size: large;
+    
+    color:rgb(10, 10, 52);
+    border-radius: 5px;
+    border-color: rgb(55, 151, 189);
+   
+}
+.row
+{
+    display: flex !important;
+    flex-direction:row !important;
+    justify-content:center !important;
+    align-items: center !important;
+    height: max-content !important;
+    
+}
+
+#flex_card
+{
+    display: flex !important;
+    justify-content: space-evenly!important;
+    flex-direction: row !important;
+}
+#clr
+{
+    color: rgb(30,48,50) !important;
+}
+#aqi_tab
+{
+    width: 70% !important;
+}
+#report
+{
+    width:30% !important;
+}
+.progress-bar
+{
+    color:rgb(10, 10, 52) !important;
+    font-weight: bold !important;
+}
+#overall
+{
+    font-weight: bolder;
+    font-size:large;
+    height:70px;
+    width:30%;
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 10px;
+    margin-top: 28px;
+    margin-left: 9px;
+}
+#AQI
+{
+    font-weight: normal;
+    font-size: large;
+    text-align: center;
+}
+#city
+{
+    width:350px !important;
+}
+.nav-link:hover
+{
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
+
+#hour_btn
+{
+     border-radius: 10px;
+     background-color: skyblue;
+     width:70px;
+     height:70px;
+     margin-top:28px;
+     border-color: aliceblue;
+}
+#hour_btn:hover
+{
+    background-color: rgba(142, 208, 249, 0.779);
+    border-color:rgb(30,48,50) ;
+}
+.row{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around  !important;
+}
+#see_more
+{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+       
+        text-decoration: transparent;
+
+        background-color: skyblue;
+      border-radius: 10px;
+      font-weight: bolder;
+    font-size:large;
+    height:70px;
+    width:30%;
+    text-align: center;
+    color:black;
+}
+#disabled{
+   color: rgb(50, 49, 49);
+}
+
+#h{
+    width: 25%;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+    text-align: center;
+  }

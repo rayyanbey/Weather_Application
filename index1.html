@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Click Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(9, 103, 150);
+            background-image: url(rohit-tandon-9wg5jCEPBsw-unsplash.jpg);
+            background-size:cover;
+        }
+
+        #logo {
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+
+        #logo.clicked {
+            transform: translateX(-100px);
+        }
+
+        #info {
+            display: none;
+            margin-left: 20px;
+        }
+
+        #logo.clicked + #info {
+            display: block;
+        }
+        #logo
+        {
+            width:270px;
+            height:500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <img id="logo" src="blue.png" alt="Logo">
+    <div id="info">
+        <p>Youth With Vision</p>
+    </div>
+
+    <script>
+        const logo = document.getElementById('logo');
+        const info = document.getElementById('info');
+
+        logo.addEventListener('click', () => {
+            logo.classList.toggle('clicked');
+        });
+    </script>
+</body>
+</html>

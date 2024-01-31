@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RayWeath_App</title>
+  <link href="index.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
+
+<body id="BD">
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="bold"><b id="bold"><i>RayWeath_App</i></b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" id="about" aria-current="page" href="#"><i>Home</i></a>
+            </li>
+            <li>
+              <a class="nav-link active" id="about" href="index2.html">Hourly Report</a>
+            </li>
+            <li>
+              <a class="nav-link active" id="about" href="index3.html">Weekly Report</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" id="about" href="https://www.youtube.com/@YouthWithVisionYWV">About Us</a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input id="city" class="form-control  custom-search-bar   me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn" type="submit" id="submit">
+              <b>🔍</b>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <main>
+      <h1 class="my-4 text-center text-white" id="head_ing">Weather For <span id="cityName"></span>
+        <i class="fa-solid fa-city"></i>
+        </a>
+      </h1>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+        <div class="col">
+          <div class="card temp mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal" id="clr">Temprature Credentials <i class="fa-solid fa-temperature-high"
+                  style="color: rgba(8, 8, 60, 0.808);"></i></h4>
+            </div>
+            <div class="card-body">
+
+
+              <ul class="list-unstyled mt-3 mb-4 text-center">
+                <h1 class="card-title pricing-card-title" id="color"><small class="text-body-secondary fw-light"
+                    id="temp2"></small> C<sup>o</sup></h1>
+                <li id="t" class="sp">Temprature is <span id="temp" class="sp"></span></li>
+                <li class="sp"><i class="fa-solid fa-temperature-low"></i>Min Temprature is <span id="min_temp"
+                    class="sp"></span></li>
+                <li class="sp"><i class="fa-solid fa-temperature-high"></i>Max Temprature is <span id="max_temp"
+                    class="sp"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal" id="clr">Humidity Credentials <i class="fa-solid fa-droplet"
+                  style="color: rgba(8, 8, 60, 0.808);"></i></h4>
+            </div>
+            <div class="card-body">
+
+              <ul class="list-unstyled mt-3 mb-4 text-center">
+                <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light"
+                    id="humidity2"></small> %</h1>
+                <li id="h" class="sp">Humidity is <span id="humidity" class="sp"></span></li>
+                <li id="lii" class="sp"><i class="fa-solid fa-cloud"></i>Cloud PCT is <span id="cloud_pct"
+                    class="sp"></span></li>
+                <li id="lii" class="sp"><i class="fa-solid fa-temperature-quarter"></i>Feels like is <span
+                    id="feels_like" class="sp"></span></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm ">
+            <div class="card-header py-3 ">
+              <h4 class="my-0 fw-normal" id="clr">Wind Speed Credentials <i class="fa-solid fa-wind"
+                  style="color: rgba(8, 8, 60, 0.808);"></i></h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4 text-center">
+                <h1 class="card-title pricing-card-title" id="ws"><small class="text-body-secondary fw-light"
+                    id="wind_speed2"></small> km/hr</h1>
+                <li id="w" class="sp">Wind Speed is <span id="wind_speed" class="sp"></span></li>
+                <li class="sp"><i class="fa-solid fa-sun"></i>Sunrise is <span id="sunrise" class="sp"></span></li>
+                <li class="sp"><i class="fa-regular fa-sun"></i>Sunset is <span id="sunset" class="sp"></span></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm ">
+            <div class="card-header py-3 ">
+              <h4 class="my-0 fw-normal" id="clr">
+                Air Quality Index
+                <i class="fa-solid fa-smog"style="color: rgba(8, 8, 60, 0.808);"></i>
+              </h4>
+              
+            </div>
+            
+            <div class="card-body">
+              
+              <ul class="list-unstyled mt-3 mb-4 text-center">
+                <h1 class="card-title pricing-card-title" id="ws">
+                  <span id="AQI"><b></b></span> <i class="fa-regular fa-face-smile" id="icon"></i>
+                </h1>
+               
+                <li class="sp"><div>
+                    <b><abbr title="Normal outdoor concentrations of CO range from about 0.1 to 0.3 parts per million (ppm). Higher concentrations might be found in areas with heavy traffic congestion or near certain industrial sources." id="feedback">Carbon Monoxide %</abbr></b>
+                  <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar  bg-info" id="NO_prog1" style="width: 0%"><span id="Co"></span></div>
+                  </div>
+                </div></span></li>
+                <li class="sp"><div>
+                  <b><abbr title="Typical outdoor concentrations of NO2 range from about 0.02 to 0.04 parts per million (ppm). Higher levels might be present in urban areas with significant traffic or industrial emissions." id="feedback">Nitrogen Dioxide %</abbr></b>
+                  <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-info" id="NO_prog2" style="width:0%"><span id="No2"></span></div>
+                  </div>
+                </div></li>
+                
+                <li class="sp"><div>
+                  <b><abbr title="Ozone levels in the atmosphere typically range from 0.01 to 0.1 parts per million (ppm) at ground level. Ozone concentrations can increase due to chemical reactions involving pollutants from vehicles and industrial sources, especially in urban areas or during periods of intense sunlight and heat." id="feedback">Ozone %</abbr></b>
+                  <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar  bg-info" id="NO_prog3" style="width: 0%"><span id="O3"></span></div>
+                  </div>
+                </div></li>
+                
+                
+
+              </ul>
+
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm ">
+            <div class="card-header py-3 ">
+              <h4 class="my-0 fw-normal" id="clr">Weekly Report <i class="fa-solid fa-calendar-week"></i></h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4 text-center">
+                <h1 class="card-title pricing-card-title" id="ws">
+                  
+                </h1>
+                <li class="sp">
+                <div id="all">
+                  <b><i class="fa-solid fa-1"></i></b>->  
+                  <span id="wtime1" class="all_span"> </span> <b>AM</b>
+                  <span id="wtemp1Max" class="all_span"> </span> <b>MAX</b>
+                  <span id="wtemp1Min" class="all_span"> </span> <b>MIN</b>
+                </div>
+                </li>
+                
+                <li class="sp">
+                  <div id="all">
+                    <b><i class="fa-solid fa-2"></i></b>->  
+                    <span id="wtime2" class="all_span"> </span> <b>AM</b>
+                    <span id="wtemp2Max" class="all_span"> </span> <b>MAX</b>
+                    <span id="wtemp2Min" class="all_span"> </span> <b>MIN</b>
+                  </div>
+                </li>
+                
+                <li class="sp">
+                  <div id="all">
+                    <b><i class="fa-solid fa-3"></i></b>->  
+                    <span id="wtime3" class="all_span"> </span> <b>AM</b>
+                    <span id="wtemp3Max" class="all_span"> </span> <b>MAX</b>
+                    <span id="wtemp3Min" class="all_span"> </span> <b>MIN</b>
+                  </div>
+                </li>
+                
+                
+                <li class="sp">
+                  <div id="all">
+                    <a class="nav-link active" id="about" href="index3.html">SEE MORE</a>
+                  </div>
+                </li>
+                <br>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm ">
+            <div class="card-header py-3 ">
+              <h4 class="my-0 fw-normal" id="clr">Hourly Report <i class="fa-solid fa-clock"></i></h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4 text-center">
+                <h1 class="card-title pricing-card-title" id="ws">
+                  
+                </h1>
+                <li class="sp">
+                <div id="all">
+                  <b><i class="fa-solid fa-1"></i></b>->  
+                  <span id="time1" class="all_span"> </span> <b>AM</b>
+                  <span id="Temp1" class="all_span"> </span> <b>C<sup>o</sup></b>
+                </div>
+                </li>
+                
+                <li class="sp">
+                  <div id="all">
+                    <b><i class="fa-solid fa-2"></i></b>-> 
+                    <span id="time2" class="all_span"> </span> <b>AM</b>
+                    <span id="Temp2" class="all_span">10</span> <b>C<sup>o</sup></b>
+                  </div>
+                </li>
+              
+                <li class="sp">
+                  <div id="all">
+                  <b><i class="fa-solid fa-3"></i></b>->
+                    <span id="time3" class="all_span"> </span> <b>AM</b>
+                    <span id="Temp3" class="all_span"> </span> <b>C<sup>o</sup></b>
+                  </div>
+                </li>
+                
+                <li class="sp">
+                  <div id="all">
+                    <a class="nav-link active" id="about" href="index2.html">SEE MORE</a>
+                </li>
+
+                <br>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </main>
+ 
+  
+
+
+
+  
+  <script src="https://kit.fontawesome.com/8cdfdc00c8.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script src="index2.js"></script>
+</body>
+
+</html>
